@@ -9,10 +9,12 @@ This repository contains the assignments and projects I completed while followin
   Create a Russian translation for the text **"Hello World"**.
 <img src="./images/screenshot1.png" alt="Screenshot" width="300" height="200">
 
-
-- **Task № 2:**  
+- **Task № 2:**
+Rename Hello World to horizontal screen.
+  
+- **Task № 3:**  
   Create a second Activity and navigate from the first screen to it.
 
-- **Task № 3:**  
+- **Task № 4:**  
   Pass objects from the first screen to the second and display these values in a **TextView**.
   
