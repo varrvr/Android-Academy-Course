@@ -69,7 +69,6 @@ object KotlinWorkshop1 {
     }
 }
 
-
 /* DO NOT TOUCH the utils below. */
 
 class MyScanner {

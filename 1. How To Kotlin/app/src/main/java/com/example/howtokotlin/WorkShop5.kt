@@ -26,15 +26,60 @@ class Bicycle: Transport(1) {
 // TODO 1: Create a new interface that will be appropriate for new classes below.
 // ? By convention, names of Classes and Interfaces start with an upper case letter and use the camel case.
 // Example: "SomeLongClassName".
-//interface ...
+interface Fuelable {
+    fun isFull(): Boolean
+    fun fuel()
+}
 
 // TODO 2: Write your own class Bus and some Car.
 //  Instead of writing it from scratch, extend it from the Transport class and your new interface.
 // ? Class can extends only one other class, but implements many interfaces, i.e.:
 // class Kitty(): Cat, Cuteable, Sleepable, Furryable {}
+class Bus(passengersCount: Int): Transport(passengersCount), Fuelable {
 
-//class Bus ...
-//class Car ...
+    private var hasFuel = false
+
+    override fun drive() {
+        if (isFull()) {
+            hasFuel = false
+            println("Driving $passengersCount passengers to the destination")
+
+        } else {
+            println("Don't have fuel. Hey passengers, let's push this thing together!")
+        }
+    }
+
+    override fun isFull(): Boolean = hasFuel
+
+    override fun fuel() {
+        hasFuel = true
+        println("Fueled a bit!")
+    }
+}
+
+// TODO 2: Write your own class Bus and some Car.
+//  Instead of writing it from scratch, extend it from the Transport class and your new interface.
+class Car(passengersCount: Int): Transport(passengersCount), Fuelable {
+
+    private var hasFuel = false
+
+    override fun drive() {
+        if (isFull()) {
+            println("Driving a car with a speed of light! $passengersCount passengers on board.")
+            hasFuel = false
+
+        } else {
+            println("Don't have fuel.")
+        }
+    }
+
+    override fun isFull(): Boolean = hasFuel
+
+    override fun fuel() {
+        hasFuel = true
+        println("Filled up with gasoline!")
+    }
+}
 
 // TODO 3: Test your transport in appropriate sections
 object VehiclesTest {
@@ -45,22 +90,32 @@ object VehiclesTest {
         testBus()
         testCar()
         testBicycle()
+
+        testBusParts()
     }
 
     private fun testBus() {
-        println("Testing how bus drives...")
-//        val bus = ...
+        println("\nTesting how bus drives...")
+        val bus = Bus(10)
+        bus.drive()
+        bus.fuel()
+        bus.drive()
     }
 
     private fun testCar() {
-        println("Testing how car drives...")
-//        val car = ...
+        println("\nTesting how car drives...")
+        val car = Car(4)
+        car.drive()
+        car.fuel()
+        car.drive()
     }
 
     private fun testBicycle() {
-        println("Testing how bicycle drives...")
-//        ...
+        println("\nTesting how bicycle drives...")
+        val bicycle = Bicycle()
+        bicycle.drive()
     }
+
 
 
 
@@ -68,10 +123,16 @@ object VehiclesTest {
 
     // TODO 4: Test bus abilities as separate features.
     private fun testBusParts() {
-        println("Testing bus's feature 1...")
+        val bus = Bus(0)
 
+        val engine: Driveable = bus
+        println("\nTesting bus's engine:")
+        println(engine.drive())
 
-        println("Testing bus's feature 2...")
-
+        val pump: Fuelable = bus
+        println("\nTesting bus's fuel system:")
+        println("has fuel: ${pump.isFull()}")
+        println(pump.fuel())
+        println("has fuel: ${pump.isFull()}")
     }
 }
