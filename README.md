@@ -7,7 +7,7 @@ This repository contains the assignments and projects I completed while followin
 ### Setup
 - **Task № 1:**  
   Create a Russian translation for the text **"Hello World"**.
-<img src="./images/screenshot1.png" alt="Screenshot" width="300" height="200">
+<img src="./images/screenshot1.png" alt="Screenshot" width="300" height="100">
 
 - **Task № 2:**
 Rename Hello World to horizontal screen.
