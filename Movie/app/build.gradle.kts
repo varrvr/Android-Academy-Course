@@ -45,4 +45,8 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation("androidx.appcompat:appcompat:1.2.0")
+    implementation ("androidx.constraintlayout:constraintlayout:2.0.2")
+    implementation ("com.google.android.material:material:1.2.1")
 }

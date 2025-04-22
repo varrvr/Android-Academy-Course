@@ -6,4 +6,5 @@
     </style>
 
     <style name="Theme.Movie" parent="Base.Theme.Movie" />
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar"/>
 </resources>
