@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">UI components</string>
+    <string name="value">The value is %d</string>
+    <string name="increment">increment</string>
+    <string name="root_fragment">root_fragment</string>
+    <string name="add_red_fragment">add red fragment</string>
+    <string name="add_blue_fragment">add blue fragment</string>
+    <string name="replace_with_green_fragment">replace with green fragment</string>
+    <string name="remove_last_fragment">remove last fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
