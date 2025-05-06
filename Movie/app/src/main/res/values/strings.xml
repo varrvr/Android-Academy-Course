@@ -12,4 +12,11 @@
     <string name="mark_ruffalo">Mark Ruffalo</string>
     <string name="chris_hemsworth">Chris Hemsworth</string>
     <string name="robert_downey_jr">Robert Downey Jr.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="movies_list">Movies list</string>
+    <string name="_13">13+</string>
+    <string name="action_adventure">Action, Adventure</string>
+    <string name="avengers_end_game2">Avengers: End Game</string>
+    <string name="_137_min">137 MIN</string>
 </resources>

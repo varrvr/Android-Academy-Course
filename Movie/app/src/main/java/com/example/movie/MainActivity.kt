@@ -10,10 +10,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_movie_details)
-
-      //  private fun openSecondActivity(){
-      //      val intent = Intent(this, movie_details_activity)
-      //  }
+        setContentView(R.layout.activity_main)
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, MovieListFragment())
+                .commit()
+        }
     }
 }
