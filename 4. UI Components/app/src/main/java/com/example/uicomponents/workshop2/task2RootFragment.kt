@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import com.example.uicomponents.R
 
-class WS02RootFragment : Fragment() {
+class Task2RootFragment : Fragment() {
 
     private var btnAddNewRedFragment: Button? = null
     private var btnAddNewBlueFragment: Button? = null

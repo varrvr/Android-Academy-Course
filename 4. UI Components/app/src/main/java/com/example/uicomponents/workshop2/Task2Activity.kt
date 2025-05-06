@@ -7,10 +7,10 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.uicomponents.R
 
-class Task2Activity : AppCompatActivity(), WS02RootFragment.TransactionsFragmentClicks {
+class Task2Activity : AppCompatActivity(), Task2RootFragment.TransactionsFragmentClicks {
 
     private val rootFragment =
-        WS02RootFragment().apply { setClickListener(this@Task2Activity) }
+        Task2RootFragment().apply { setClickListener(this@Task2Activity) }
     private var count: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
