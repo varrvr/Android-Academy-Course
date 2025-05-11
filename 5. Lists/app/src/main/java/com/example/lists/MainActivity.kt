@@ -1,11 +1,9 @@
 package com.example.lists
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.lists.workshop1.ActorsFragment
+import com.example.lists.workshop1.WS1ActorsFragment
+import com.example.lists.workshop2.WS2ActorsFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,7 +12,7 @@ class MainActivity : AppCompatActivity() {
 
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.container, ActorsFragment.newInstance())
+                .replace(R.id.container, WS2ActorsFragment.newInstance())
                 .commit()
         }
     }

@@ -12,7 +12,7 @@ import com.example.lists.R
 //  Parametrize the generic with EmptyViewHolder.
 //  Add a constructor invocation to the RecyclerView.Adapter.
 //  Place a cursor on the WS01ActorsAdapter name, press "Alt+Enter", implement all three methods.
-class ActorsAdapter : RecyclerView.Adapter<ActorsAdapter.EmptyViewHolder>() {
+class WS1ActorsAdapter : RecyclerView.Adapter<WS1ActorsAdapter.EmptyViewHolder>() {
 
     private var actors = listOf<Actor>()
 

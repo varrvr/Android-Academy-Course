@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">Lists</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="fragment_actors_header">fragment actors header</string>
+
+    <string name="fragment_actors_header">Actors</string>
+    <string name="fragment_actors_empty_text">There are no actors right now</string>
+    <string name="fragment_actors_avatar_content_description">Actor avatar</string>
+    <string name="fragment_actors_avatar_oscar_state_text">oscar: %1$s</string>
+    <!-- FragmentActors -->
+    <string name="fragment_actors_chosen_text">You chose: %1$s</string>
+
 </resources>

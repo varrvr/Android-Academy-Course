@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.lists.R
 import com.example.lists.domain.ActorDataSource
 
-class ActorsFragment : Fragment() {
+class WS1ActorsFragment : Fragment() {
 
     // TODO 01: create a nullable var of the "androidx.recyclerview.widget.RecyclerView" class.
     private var recyclerView: RecyclerView? = null
@@ -28,7 +28,7 @@ class ActorsFragment : Fragment() {
         // TODO 03: First of all, find recycler view inside the fragment "view" and store to a variable.
         recyclerView = view.findViewById(R.id.rv_actors)
         // TODO 04: Instantiate the WS01ActorsAdapter and assign it to a recycler's adapter.
-        recyclerView?.adapter = ActorsAdapter()
+        recyclerView?.adapter = WS1ActorsAdapter()
     }
 
     override fun onStart() {
@@ -39,7 +39,7 @@ class ActorsFragment : Fragment() {
 
     private fun updateData() {
         // TODO 05: Uncomment and fix "someRecycler" name if needed.
-        (recyclerView?.adapter as? ActorsAdapter)?.apply {
+        (recyclerView?.adapter as? WS1ActorsAdapter)?.apply {
             bindActors(ActorDataSource().getActors())
         }
 
@@ -47,6 +47,6 @@ class ActorsFragment : Fragment() {
     }
 
     companion object {
-        fun newInstance() = ActorsFragment()
+        fun newInstance() = WS1ActorsFragment()
     }
 }
