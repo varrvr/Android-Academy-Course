@@ -2,7 +2,7 @@ package com.example.lists.domain
 
 import com.example.lists.models.Actor
 
-class ActorsDataSource {
+class ActorDataSource {
     fun getActors(): List<Actor> {
         return listOf(
             Actor("Alicia Vikander", "https://image.ibb.co/nKNBrd/Alicia_Vikander.jpg", true),
