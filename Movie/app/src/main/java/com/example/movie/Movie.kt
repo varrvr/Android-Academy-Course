@@ -8,5 +8,6 @@ data class Movie(
     val genre: String,
     val reviews: Int,
     val duration: Int,
-    @DrawableRes val posterRes: Int
+    @DrawableRes val posterRes: Int,
+    @DrawableRes val bannerRes: Int  // нов поле
 )

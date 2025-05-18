@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/ivActorPhoto"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/robert" />
+
+    <TextView
+        android:id="@+id/tvActorName"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="A Very Long Actor Name"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:gravity="center"
+    />
+
+</LinearLayout>
